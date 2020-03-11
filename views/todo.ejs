@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="ToDo.png" type="image/png">
+</head>
+<body>
+    <p class="head">TODO LIST</p>
+    <div class="todo-div">
+        <input type="text" id="todo" name="todo" placeholder="Type todo here..." autocomplete= "off">
+        <input type="button" value="Save Todo" onclick="todoer()">
+        <h3>Todos:</h3>
+        <h1 id="notodo">- - - - - No ToDo's at present - - - - -</h1>
+        <ul id="ul">
+        </ul>
+    </div>
+    <div id="invisible"></div>
+    <div id="alert">
+        <h1>Error!</h1>
+        <p id="alert-text"></p>
+        <button onclick="removeAlert()">OK</button>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="/init.js"></script>
+</body>
+</html>
